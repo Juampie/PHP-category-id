@@ -1,0 +1,8 @@
+# Файлы окружения
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
