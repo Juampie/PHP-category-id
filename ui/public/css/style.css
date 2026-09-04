@@ -1,0 +1,114 @@
+:root {
+    --bg: #f3efe6;
+    --ink: #1f1b16;
+    --muted: #6f675c;
+    --paper: #fffcf7;
+    --line: #ddd4c4;
+    --accent: #1f6f64;
+    --accent-soft: #d7efe9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+}
+
+.header h1 {
+    margin: 8px 0 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+
+.eyebrow {
+    margin: 0;
+    color: var(--accent);
+    font-family: "Segoe UI", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 32px 0 24px;
+}
+
+.categories button {
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--ink);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font: inherit;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.categories button[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.status {
+    min-height: 1.4em;
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.products {
+    display: grid;
+    gap: 12px;
+}
+
+.card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 22px;
+}
+
+.card h2 {
+    margin: 0 0 6px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.price {
+    margin: 0 0 10px;
+    color: var(--accent);
+    font-family: "Segoe UI", sans-serif;
+    font-size: 0.95rem;
+}
+
+.card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.45;
+}
+
+.empty {
+    padding: 28px;
+    border: 1px dashed var(--line);
+    border-radius: 16px;
+    color: var(--muted);
+    font-family: "Segoe UI", sans-serif;
+}
